@@ -40,7 +40,7 @@ export default {
     ons_status: state => state.gateway.ons_status,
     unlocked_balance: state => state.gateway.wallet.info.unlocked_balance,
     disable_submit_button() {
-      const minBalance = this.updating ? 0.05 : 8;
+      const minBalance = this.updating ? 0.05 : 7.1;
       return this.unlocked_balance < minBalance * 1e9;
     },
     submit_label() {
